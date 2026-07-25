@@ -570,15 +570,6 @@
                                   "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/hp.png"
                               },
                               {
-                                  "name":  "magic ui damage",
-                                  "replace_ids":  [
-                                                      13853836511
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/damage.png"
-                              },
-                              {
                                   "name":  "magic ui streak",
                                   "replace_ids":  [
                                                       17175092502,
@@ -803,16 +794,6 @@
                                   "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/jar3.ogg"
                               },
                               {
-                                  "name":  "crystal lobby music",
-                                  "replace_ids":  [
-                                                      17697682466,
-                                                      120824068504773
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/lobby_crystal.ogg"
-                              },
-                              {
                                   "name":  "crystal matchmaking",
                                   "replace_ids":  [
                                                       18525513345
@@ -838,16 +819,6 @@
                                   "enabled":  true,
                                   "mode":  "cdn",
                                   "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/swing1.ogg"
-                              },
-                              {
-                                  "name":  "crystal lobby muffled",
-                                  "replace_ids":  [
-                                                      17733314783,
-                                                      114306049661290
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/lobby_crystal_muffled.ogg"
                               },
                               {
                                   "name":  "crystal duel timer 4",
@@ -965,7 +936,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/jar1.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/medkit_jar1_x2_5.ogg"
                               },
                               {
                                   "name":  "crystal medkit bandage rip",
@@ -974,7 +945,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/page1.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/medkit_page1_x2_5.ogg"
                               },
                               {
                                   "name":  "crystal medkit heal",
@@ -983,7 +954,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/learn.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/medkit_learn_x2_5.ogg"
                               },
                               {
                                   "name":  "crystal medkit reload pop",
@@ -992,7 +963,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/bubble1.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/medkit_bubble1_x2_5.ogg"
                               },
                               {
                                   "name":  "crystal medkit equip catch",
@@ -1001,7 +972,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/tool1.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/medkit_tool1_x2_5.ogg"
                               },
                               {
                                   "name":  "crystal medkit apply",
@@ -1010,7 +981,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/spill.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/medkit_spill_x2_5.ogg"
                               },
                               {
                                   "name":  "crystal map ambience",

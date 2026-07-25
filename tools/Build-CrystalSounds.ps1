@@ -54,6 +54,20 @@ foreach ($entry in $directFiles.GetEnumerator()) {
         -Destination (Join-Path $outputDirectory $entry.Key) -Force
 }
 
+$medkitAmplified = [ordered]@{
+    'medkit_jar1_x2_5.ogg'    = 'jar1.ogg'
+    'medkit_page1_x2_5.ogg'   = 'page1.ogg'
+    'medkit_learn_x2_5.ogg'   = 'learn.ogg'
+    'medkit_bubble1_x2_5.ogg' = 'bubble1.ogg'
+    'medkit_tool1_x2_5.ogg'   = 'tool1.ogg'
+    'medkit_spill_x2_5.ogg'   = 'spill.ogg'
+}
+foreach ($entry in $medkitAmplified.GetEnumerator()) {
+    Invoke-AudioBuild -OutputName $entry.Key -Arguments @(
+        '-i', (Join-Path $outputDirectory $entry.Value), '-af', 'volume=2.5'
+    )
+}
+
 $infuserStart = Get-SourcePath '04_ambience_portals\infuserstart.ogg'
 $shieldEffect = Get-SourcePath '01_crystal_core\runicShieldEffect.ogg'
 Invoke-AudioBuild -OutputName 'warhorn_crystal.ogg' -Arguments @(
@@ -81,19 +95,11 @@ Invoke-AudioBuild -OutputName 'timer4_crystal.ogg' -Arguments @(
 )
 
 $monolith = Get-SourcePath '04_ambience_portals\monolith.ogg'
-Invoke-AudioBuild -OutputName 'lobby_crystal.ogg' -Arguments @(
+Invoke-AudioBuild -OutputName 'map_ambience_crystal.ogg' -Arguments @(
     '-i', $monolith,
     '-filter_complex',
-    '[0:a]asplit=3[a][b][c];[a]atrim=start=3:end=20.028,asetpts=PTS-STARTPTS[mid];[b]atrim=start=20.028:end=23.028,asetpts=PTS-STARTPTS[tail];[c]atrim=start=0:end=3,asetpts=PTS-STARTPTS[head];[tail][head]acrossfade=d=3:c1=tri:c2=tri[seam];[mid][seam]concat=n=2:v=0:a=1,highpass=f=55,lowpass=f=11000,volume=0.72,alimiter=limit=0.92[out]',
+    '[0:a]asplit=3[a][b][c];[a]atrim=start=3:end=20.028,asetpts=PTS-STARTPTS[mid];[b]atrim=start=20.028:end=23.028,asetpts=PTS-STARTPTS[tail];[c]atrim=start=0:end=3,asetpts=PTS-STARTPTS[head];[tail][head]acrossfade=d=3:c1=tri:c2=tri[seam];[mid][seam]concat=n=2:v=0:a=1,highpass=f=65,lowpass=f=6500,volume=0.2448,alimiter=limit=0.92[out]',
     '-map', '[out]'
-)
-Invoke-AudioBuild -OutputName 'lobby_crystal_muffled.ogg' -Arguments @(
-    '-i', (Join-Path $outputDirectory 'lobby_crystal.ogg'),
-    '-af', 'lowpass=f=950,highpass=f=70,volume=0.48'
-)
-Invoke-AudioBuild -OutputName 'map_ambience_crystal.ogg' -Arguments @(
-    '-i', (Join-Path $outputDirectory 'lobby_crystal.ogg'),
-    '-af', 'lowpass=f=6500,highpass=f=65,volume=0.34'
 )
 
 Invoke-AudioBuild -OutputName 'win_theme_crystal.ogg' -Arguments @(
