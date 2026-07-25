@@ -6,7 +6,7 @@ Creator / rights holder: Azanor
 Permission granted to: 66 MODS  
 Permission date: February 28, 2025
 
-Thaumcraft sound effects — used with permission.
+**Thaumcraft sound effects — used with permission.**
 
 Permission includes public use of Thaumcraft sound effects in videos,
 social media, gameplay showcases, trailers, livestreams, other publicly
@@ -19,4 +19,25 @@ the sounds as part of a larger project or package. The sounds may not be
 redistributed, sold, or licensed as a standalone sound library or as a
 replacement for the original assets.
 
-Ownership remains with the original creator and/or rights holder.
+## Thaumcraft image assets
+
+Creator / rights holder: Azanor  
+Permission granted to: 66 MODS  
+Permission date: February 25, 2025
+
+**Thaumcraft image assets — used with permission.**
+
+Permission includes editing, cropping, resizing, recoloring, conversion,
+enhancement, composition, public use, and redistribution in publicly
+accessible repositories when the image assets are part of a larger project,
+resource pack, mod, software package, or derivative work.
+
+The image assets may not be redistributed, sold, or licensed as a standalone
+image library, asset collection, or direct replacement for the original
+Thaumcraft assets.
+
+The complete supplied permission is recorded in
+`docs/permissions/THAUMCRAFT_IMAGE_PERMISSION.md`.
+
+Ownership of the original assets remains with the original creator and/or
+rights holder.

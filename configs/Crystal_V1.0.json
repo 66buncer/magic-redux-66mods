@@ -377,6 +377,297 @@
                                   "enabled":  true,
                                   "mode":  "cdn",
                                   "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand2.ogg"
+                              },
+                              {
+                                  "name":  "magic ui back",
+                                  "replace_ids":  [
+                                                      17562685319
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/back.png"
+                              },
+                              {
+                                  "name":  "magic ui next",
+                                  "replace_ids":  [
+                                                      113844621753627
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/next.png"
+                              },
+                              {
+                                  "name":  "magic ui plus",
+                                  "replace_ids":  [
+                                                      17838317115
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/plus.png"
+                              },
+                              {
+                                  "name":  "magic ui x",
+                                  "replace_ids":  [
+                                                      17838290166,
+                                                      108220438104376
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/x.png"
+                              },
+                              {
+                                  "name":  "magic ui lock",
+                                  "replace_ids":  [
+                                                      17229230506
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/lock.png"
+                              },
+                              {
+                                  "name":  "magic ui exit",
+                                  "replace_ids":  [
+                                                      17498605048
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/exit.png"
+                              },
+                              {
+                                  "name":  "magic ui settings",
+                                  "replace_ids":  [
+                                                      14641612286,
+                                                      17619445191
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/settings.png"
+                              },
+                              {
+                                  "name":  "magic ui save",
+                                  "replace_ids":  [
+                                                      13733474711
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/save.png"
+                              },
+                              {
+                                  "name":  "magic ui region",
+                                  "replace_ids":  [
+                                                      135846354277966
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/region.png"
+                              },
+                              {
+                                  "name":  "magic ui servers",
+                                  "replace_ids":  [
+                                                      12343093905
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/servers.png"
+                              },
+                              {
+                                  "name":  "magic ui task completed",
+                                  "replace_ids":  [
+                                                      17772690718
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/task_completed.png"
+                              },
+                              {
+                                  "name":  "magic ui book",
+                                  "replace_ids":  [
+                                                      18457336026
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/book.png"
+                              },
+                              {
+                                  "name":  "magic ui scroll",
+                                  "replace_ids":  [
+                                                      17619445009
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/scroll.png"
+                              },
+                              {
+                                  "name":  "magic ui duels",
+                                  "replace_ids":  [
+                                                      18525954682
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/duels.png"
+                              },
+                              {
+                                  "name":  "magic ui spectate",
+                                  "replace_ids":  [
+                                                      77908042044589
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/spectate.png"
+                              },
+                              {
+                                  "name":  "magic ui teammate",
+                                  "replace_ids":  [
+                                                      17704137194
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/teammate.png"
+                              },
+                              {
+                                  "name":  "magic ui logo",
+                                  "replace_ids":  [
+                                                      17803962335
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/logo.png"
+                              },
+                              {
+                                  "name":  "magic ui logo g",
+                                  "replace_ids":  [
+                                                      13854780213
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/logo_g.png"
+                              },
+                              {
+                                  "name":  "magic ui level",
+                                  "replace_ids":  [
+                                                      81461991645938
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/level.png"
+                              },
+                              {
+                                  "name":  "magic ui gamemode end",
+                                  "replace_ids":  [
+                                                      99135525400251
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/gamemode_end.png"
+                              },
+                              {
+                                  "name":  "magic ui hp",
+                                  "replace_ids":  [
+                                                      8276600102
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/hp.png"
+                              },
+                              {
+                                  "name":  "magic ui damage",
+                                  "replace_ids":  [
+                                                      13853836511
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/damage.png"
+                              },
+                              {
+                                  "name":  "magic ui streak",
+                                  "replace_ids":  [
+                                                      17175092502,
+                                                      17094014569
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/streak.png"
+                              },
+                              {
+                                  "name":  "magic ui killfeed headshot",
+                                  "replace_ids":  [
+                                                      126928245743331
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/headshot.png"
+                              },
+                              {
+                                  "name":  "magic ui arch top",
+                                  "replace_ids":  [
+                                                      133793956251748
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/arch_top.png"
+                              },
+                              {
+                                  "name":  "magic ui nem top",
+                                  "replace_ids":  [
+                                                      116941545385923
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/icons/nem_top.png"
+                              },
+                              {
+                                  "name":  "magic item background 1",
+                                  "replace_ids":  [
+                                                      13220167337
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/item-backgrounds/itembg1.png"
+                              },
+                              {
+                                  "name":  "magic item background 2",
+                                  "replace_ids":  [
+                                                      13188242420
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/item-backgrounds/itembg2.png"
+                              },
+                              {
+                                  "name":  "magic item background 3",
+                                  "replace_ids":  [
+                                                      13220167472
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/item-backgrounds/itembg3.png"
+                              },
+                              {
+                                  "name":  "magic item background 4",
+                                  "replace_ids":  [
+                                                      13188153054
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/item-backgrounds/itembg4.png"
+                              },
+                              {
+                                  "name":  "magic item background 5",
+                                  "replace_ids":  [
+                                                      13188242287
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/item-backgrounds/itembg5.png"
+                              },
+                              {
+                                  "name":  "magic arena background",
+                                  "replace_ids":  [
+                                                      7658055825
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/backgrounds/arena.png"
                               }
                           ]
 }
