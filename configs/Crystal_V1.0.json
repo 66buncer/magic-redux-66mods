@@ -1,0 +1,220 @@
+﻿{
+    "replacement_rules":  [
+                              {
+                                  "name":  "crystal head hit v1",
+                                  "replace_ids":  [
+                                                      16537337310
+                                                  ],
+                                  "mode":  "cdn",
+                                  "enabled":  true,
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal head hit v2",
+                                  "replace_ids":  [
+                                                      16537449730
+                                                  ],
+                                  "mode":  "cdn",
+                                  "enabled":  true,
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal headshot",
+                                  "replace_ids":  [
+                                                      15109829804
+                                                  ],
+                                  "mode":  "cdn",
+                                  "enabled":  true,
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal rank: bronze 1",
+                                  "replace_ids":  [
+                                                      106623367501544
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze1.png"
+                              },
+                              {
+                                  "name":  "crystal rank: bronze 2",
+                                  "replace_ids":  [
+                                                      131795064007344
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze2.png"
+                              },
+                              {
+                                  "name":  "crystal rank: bronze 3",
+                                  "replace_ids":  [
+                                                      73543520622815
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze3.png"
+                              },
+                              {
+                                  "name":  "crystal rank: silver 1",
+                                  "replace_ids":  [
+                                                      80716950169934
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver1.png"
+                              },
+                              {
+                                  "name":  "crystal rank: silver 2",
+                                  "replace_ids":  [
+                                                      136100661820261
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver2.png"
+                              },
+                              {
+                                  "name":  "crystal rank: silver 3",
+                                  "replace_ids":  [
+                                                      107898816876115
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver3.png"
+                              },
+                              {
+                                  "name":  "crystal rank: gold 1",
+                                  "replace_ids":  [
+                                                      134520747948636
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold1.png"
+                              },
+                              {
+                                  "name":  "crystal rank: gold 2",
+                                  "replace_ids":  [
+                                                      114166096331502
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold2.png"
+                              },
+                              {
+                                  "name":  "crystal rank: gold 3",
+                                  "replace_ids":  [
+                                                      90039594400813
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold3.png"
+                              },
+                              {
+                                  "name":  "crystal rank: platinum 1",
+                                  "replace_ids":  [
+                                                      133903971285645
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum1.png"
+                              },
+                              {
+                                  "name":  "crystal rank: platinum 2",
+                                  "replace_ids":  [
+                                                      82834564754747
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum2.png"
+                              },
+                              {
+                                  "name":  "crystal rank: platinum 3",
+                                  "replace_ids":  [
+                                                      73345783863790
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum3.png"
+                              },
+                              {
+                                  "name":  "crystal rank: diamond 1",
+                                  "replace_ids":  [
+                                                      113997689031026
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond1.png"
+                              },
+                              {
+                                  "name":  "crystal rank: diamond 2",
+                                  "replace_ids":  [
+                                                      88059506918419
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond2.png"
+                              },
+                              {
+                                  "name":  "crystal rank: diamond 3",
+                                  "replace_ids":  [
+                                                      112183171942172
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond3.png"
+                              },
+                              {
+                                  "name":  "crystal rank: onyx 1",
+                                  "replace_ids":  [
+                                                      104871954739030
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx1.png"
+                              },
+                              {
+                                  "name":  "crystal rank: onyx 2",
+                                  "replace_ids":  [
+                                                      109012386782238
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx2.png"
+                              },
+                              {
+                                  "name":  "crystal rank: onyx 3",
+                                  "replace_ids":  [
+                                                      127982903682334
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx3.png"
+                              },
+                              {
+                                  "name":  "magic kill 1",
+                                  "replace_ids":  [
+                                                      16530229616
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant1.ogg"
+                              },
+                              {
+                                  "name":  "magic kill 2",
+                                  "replace_ids":  [
+                                                      16530229541
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant2.ogg"
+                              },
+                              {
+                                  "name":  "magic kill 3",
+                                  "replace_ids":  [
+                                                      16530229695
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant3.ogg"
+                              }
+                          ]
+}
