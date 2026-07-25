@@ -32,14 +32,14 @@ foreach ($item in $expectedSounds) {
 }
 
 $upRule = @($config.replacement_rules | Where-Object { $_.name -eq 'crystal skybox up' })
-$expectedUpUrl = 'https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/up_v3.png'
+$expectedUpUrl = 'https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/up_v4.png'
 if ($upRule.Count -ne 1 -or $upRule[0].cdn_url -ne $expectedUpUrl) {
-    throw 'Skybox Up rule does not point to up_v3.png'
+    throw 'Skybox Up rule does not point to up_v4.png'
 }
 
-$upV2 = Join-Path $skyboxDirectory 'up_v2.png'
 $upV3 = Join-Path $skyboxDirectory 'up_v3.png'
-if (-not (Test-Path -LiteralPath $upV3)) {
+$upV4 = Join-Path $skyboxDirectory 'up_v4.png'
+if (-not (Test-Path -LiteralPath $upV4)) {
     throw 'Corrected Skybox Up file is missing'
 }
 
@@ -47,18 +47,18 @@ $tempRoot = [IO.Path]::GetFullPath([IO.Path]::GetTempPath())
 $tempDirectory = Join-Path $tempRoot ("crystal-up-test-" + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $tempDirectory | Out-Null
 try {
-    $expectedUp = Join-Path $tempDirectory 'expected-up-v3.png'
-    & ffmpeg -hide_banner -loglevel error -y -i $upV2 -vf 'hflip,vflip' -frames:v 1 $expectedUp
+    $expectedUp = Join-Path $tempDirectory 'expected-up-v4.png'
+    & ffmpeg -hide_banner -loglevel error -y -i $upV3 -vf 'transpose=1' -frames:v 1 $expectedUp
     if ($LASTEXITCODE -ne 0) {
-        throw 'Could not build expected 180-degree Up correction'
+        throw 'Could not build expected clockwise Up correction'
     }
 
     $previousPreference = $ErrorActionPreference
     $ErrorActionPreference = 'Continue'
-    $psnrOutput = (& ffmpeg -hide_banner -i $expectedUp -i $upV3 -lavfi psnr -f null NUL 2>&1) -join "`n"
+    $psnrOutput = (& ffmpeg -hide_banner -i $expectedUp -i $upV4 -lavfi psnr -f null NUL 2>&1) -join "`n"
     $ErrorActionPreference = $previousPreference
     if ($psnrOutput -notmatch 'average:inf') {
-        throw 'up_v3.png must be an exact 180-degree rotation of up_v2.png'
+        throw 'up_v4.png must be an exact 90-degree clockwise rotation of up_v3.png'
     }
 }
 finally {
@@ -68,4 +68,4 @@ finally {
     }
 }
 
-Write-Host 'Wisp sounds and Skybox Up validation passed: four exact OGG files and one 180-degree Up correction.'
+Write-Host 'Wisp sounds and Skybox Up validation passed: four exact OGG files and one additional clockwise Up correction.'

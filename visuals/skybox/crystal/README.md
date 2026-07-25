@@ -6,7 +6,7 @@ The six 1024×1024 PNG files are oriented for Roblox `Sky` properties:
 - `bk_v2.png` → `SkyboxBk` (+Z)
 - `lf_v2.png` → `SkyboxLf` (-X)
 - `rt_v2.png` → `SkyboxRt` (+X)
-- `up_v3.png` → `SkyboxUp` (+Y, plus the manually verified 180° in-game correction)
+- `up_v4.png` → `SkyboxUp` (+Y, with the v3 correction turned another 90° clockwise)
 - `dn_v2.png` → `SkyboxDn` (-Y, rotated 90° counter-clockwise)
 
 The v2 names prevent clients from reusing the cached, incorrectly mapped

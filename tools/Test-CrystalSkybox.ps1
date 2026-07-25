@@ -26,7 +26,7 @@ $expectedRules = [ordered]@{
         Ids = @(14147882405, 2108482542, 10196549902)
     }
     'crystal skybox up' = @{
-        File = 'up_v3.png'
+        File = 'up_v4.png'
         Ids = @(14147881297, 2108482676, 10196567794)
     }
     'crystal skybox dn' = @{
@@ -36,7 +36,7 @@ $expectedRules = [ordered]@{
 }
 
 Add-Type -AssemblyName System.Drawing
-foreach ($fileName in @('ft_v2.png', 'bk_v2.png', 'lf_v2.png', 'rt_v2.png', 'up_v3.png', 'dn_v2.png')) {
+foreach ($fileName in @('ft_v2.png', 'bk_v2.png', 'lf_v2.png', 'rt_v2.png', 'up_v4.png', 'dn_v2.png')) {
     $facePath = Join-Path $skyboxDirectory $fileName
     if (-not (Test-Path -LiteralPath $facePath)) {
         $failures.Add("Missing face: $fileName")
@@ -61,18 +61,18 @@ if ((Test-Path -LiteralPath $panoramaPath) -and $failures.Count -eq 0) {
     try {
         $robloxCubemapPath = Join-Path $tempDirectory 'roblox-cubemap.png'
         $roundtripPath = Join-Path $tempDirectory 'roundtrip.png'
-        $facePaths = @('ft_v2.png', 'rt_v2.png', 'bk_v2.png', 'lf_v2.png', 'up_v3.png', 'dn_v2.png') |
+        $facePaths = @('ft_v2.png', 'rt_v2.png', 'bk_v2.png', 'lf_v2.png', 'up_v4.png', 'dn_v2.png') |
             ForEach-Object { Join-Path $skyboxDirectory $_ }
 
         # Roblox uses -Z for SkyboxFt and +Z for SkyboxBk. FFmpeg's
         # cubemap FRONT is +Z and BACK is -Z, so Ft/Bk must be reversed.
         # Roblox maps +Y to Up (rotated CW) and -Y to Dn (rotated CCW),
         # while FFmpeg calls -Y "up" and +Y "down".
-        # up_v3 also contains the manually verified 180-degree in-game correction.
+        # up_v4 contains the manual 180-degree correction plus one clockwise turn.
         & ffmpeg -hide_banner -loglevel error -y `
             -i $facePaths[0] -i $facePaths[1] -i $facePaths[2] `
             -i $facePaths[3] -i $facePaths[4] -i $facePaths[5] `
-            -filter_complex "[2:v][1:v][0:v]hstack=inputs=3[top];[5:v]transpose=1[ffmpeg_up];[4:v]hflip,vflip,transpose=2[ffmpeg_down];[3:v][ffmpeg_up][ffmpeg_down]hstack=inputs=3[bottom];[top][bottom]vstack=inputs=2" `
+            -filter_complex "[2:v][1:v][0:v]hstack=inputs=3[top];[5:v]transpose=1[ffmpeg_up];[4:v]transpose=2,hflip,vflip,transpose=2[ffmpeg_down];[3:v][ffmpeg_up][ffmpeg_down]hstack=inputs=3[bottom];[top][bottom]vstack=inputs=2" `
             -frames:v 1 $robloxCubemapPath
         if ($LASTEXITCODE -ne 0) {
             throw "ffmpeg failed while assembling the Roblox cubemap"
