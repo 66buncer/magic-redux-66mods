@@ -409,4 +409,3 @@ finally {
 }
 
 Write-Output "PREPARED-BACKGROUNDS item_backgrounds=5 arena=1 overlays=2"
-
