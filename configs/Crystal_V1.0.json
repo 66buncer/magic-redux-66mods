@@ -1,6 +1,105 @@
 {
     "replacement_rules":  [
                               {
+                                  "name":  "magic font cinzel light",
+                                  "replace_ids":  [
+                                                      12187342816
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel regular",
+                                  "replace_ids":  [
+                                                      12187288714
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel medium",
+                                  "replace_ids":  [
+                                                      12187271237
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel semibold",
+                                  "replace_ids":  [
+                                                      12187320363
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel bold",
+                                  "replace_ids":  [
+                                                      12187303601
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel extrabold",
+                                  "replace_ids":  [
+                                                      12187262242
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel black",
+                                  "replace_ids":  [
+                                                      12187280273
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel medium italic",
+                                  "replace_ids":  [
+                                                      12187354260
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel bold italic",
+                                  "replace_ids":  [
+                                                      12187341500
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel black italic",
+                                  "replace_ids":  [
+                                                      12187320081
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
+                                  "name":  "magic font cinzel extrabold italic",
+                                  "replace_ids":  [
+                                                      12187323909
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/fonts/cinzel.ttf"
+                              },
+                              {
                                   "name":  "crystal head hit v1",
                                   "replace_ids":  [
                                                       16537337310
