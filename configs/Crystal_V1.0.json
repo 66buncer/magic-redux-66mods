@@ -34,7 +34,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze1.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze1_128.png"
                               },
                               {
                                   "name":  "crystal rank: bronze 2",
@@ -43,7 +43,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze2.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze2_128.png"
                               },
                               {
                                   "name":  "crystal rank: bronze 3",
@@ -52,7 +52,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze3.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/bronze3_128.png"
                               },
                               {
                                   "name":  "crystal rank: silver 1",
@@ -61,7 +61,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver1.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver1_128.png"
                               },
                               {
                                   "name":  "crystal rank: silver 2",
@@ -70,7 +70,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver2.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver2_128.png"
                               },
                               {
                                   "name":  "crystal rank: silver 3",
@@ -79,7 +79,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver3.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/silver3_128.png"
                               },
                               {
                                   "name":  "crystal rank: gold 1",
@@ -88,7 +88,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold1.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold1_128.png"
                               },
                               {
                                   "name":  "crystal rank: gold 2",
@@ -97,7 +97,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold2.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold2_128.png"
                               },
                               {
                                   "name":  "crystal rank: gold 3",
@@ -106,7 +106,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold3.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/gold3_128.png"
                               },
                               {
                                   "name":  "crystal rank: platinum 1",
@@ -115,7 +115,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum1.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum1_128.png"
                               },
                               {
                                   "name":  "crystal rank: platinum 2",
@@ -124,7 +124,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum2.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum2_128.png"
                               },
                               {
                                   "name":  "crystal rank: platinum 3",
@@ -133,7 +133,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum3.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/platinum3_128.png"
                               },
                               {
                                   "name":  "crystal rank: diamond 1",
@@ -142,7 +142,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond1.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond1_128.png"
                               },
                               {
                                   "name":  "crystal rank: diamond 2",
@@ -151,7 +151,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond2.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond2_128.png"
                               },
                               {
                                   "name":  "crystal rank: diamond 3",
@@ -160,7 +160,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond3.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/diamond3_128.png"
                               },
                               {
                                   "name":  "crystal rank: onyx 1",
@@ -169,7 +169,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx1.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx1_128.png"
                               },
                               {
                                   "name":  "crystal rank: onyx 2",
@@ -178,7 +178,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx2.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx2_128.png"
                               },
                               {
                                   "name":  "crystal rank: onyx 3",
@@ -187,7 +187,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx3.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/ranks/onyx3_128.png"
                               },
                               {
                                   "name":  "magic kill 1",
