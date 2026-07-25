@@ -367,7 +367,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/swing1.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand1.ogg"
                               },
                               {
                                   "name":  "crystal katana attack 2",
@@ -376,7 +376,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/swing2.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand2.ogg"
                               }
                           ]
 }
