@@ -8,7 +8,7 @@ $soundDirectory = Join-Path $RepositoryRoot 'sounds'
 $failures = [System.Collections.Generic.List[string]]::new()
 
 $expected = @(
-    @{ Name='crystal warhorn'; Ids=@(73325703605178,94406584083681); File='warhorn_crystal.ogg' },
+    @{ Name='crystal warhorn'; Ids=@(73325703605178,94406584083681); File='warhorn_egidle1.ogg' },
     @{ Name='crystal map select'; Ids=@(103035811146294); File='key.ogg' },
     @{ Name='crystal double jump'; Ids=@(16770456156,16492958314); File='swing2.ogg' },
     @{ Name='crystal duel timer 10'; Ids=@(17826470563); File='timer10_crystal.ogg' },
@@ -37,9 +37,9 @@ $expected = @(
     @{ Name='crystal medkit equip catch'; Ids=@(13160326139); File='medkit_tool1_x2_5.ogg' },
     @{ Name='crystal medkit apply'; Ids=@(13505411336); File='medkit_spill_x2_5.ogg' },
     @{ Name='crystal map ambience'; Ids=@(17813065011,17813065464,12099785239); File='map_ambience_crystal.ogg' },
-    @{ Name='magic kill 1'; Ids=@(16530229616); File='chant1_short.ogg' },
-    @{ Name='magic kill 2'; Ids=@(16530229541); File='chant2_short.ogg' },
-    @{ Name='magic kill 3'; Ids=@(16530229695); File='chant3_short.ogg' },
+    @{ Name='magic kill 1'; Ids=@(16530229616); File='kill1_wisplive1.ogg' },
+    @{ Name='magic kill 2'; Ids=@(16530229541); File='kill2_wisplive2.ogg' },
+    @{ Name='magic kill 3'; Ids=@(16530229695); File='kill3_wisplive3.ogg' },
     @{ Name='crystal portal ambience'; Ids=@(114274252176516); File='evilportal_loop.ogg' },
     @{ Name='crystal katana attack 1'; Ids=@(14000023581); File='wand1_short.ogg' },
     @{ Name='crystal katana attack 2'; Ids=@(14000023392); File='wand2_short.ogg' }

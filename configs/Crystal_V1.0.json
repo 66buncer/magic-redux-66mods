@@ -196,7 +196,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant1_short.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/kill1_wisplive1.ogg"
                               },
                               {
                                   "name":  "magic kill 2",
@@ -205,7 +205,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant2_short.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/kill2_wisplive2.ogg"
                               },
                               {
                                   "name":  "magic kill 3",
@@ -214,7 +214,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant3_short.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/kill3_wisplive3.ogg"
                               },
                               {
                                   "name":  "crystal body hit",
@@ -713,7 +713,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/up_v2.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/up_v3.png"
                               },
                               {
                                   "name":  "crystal skybox dn",
@@ -734,7 +734,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/warhorn_crystal.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/warhorn_egidle1.ogg"
                               },
                               {
                                   "name":  "crystal map select",

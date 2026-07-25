@@ -8,7 +8,7 @@ $config = Get-Content -Raw -LiteralPath $configPath | ConvertFrom-Json
 $baseUrl = 'https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds'
 
 $newRules = @(
-    @{ Name='crystal warhorn'; Ids=@(73325703605178,94406584083681); File='warhorn_crystal.ogg' },
+    @{ Name='crystal warhorn'; Ids=@(73325703605178,94406584083681); File='warhorn_egidle1.ogg' },
     @{ Name='crystal map select'; Ids=@(103035811146294); File='key.ogg' },
     @{ Name='crystal double jump'; Ids=@(16770456156,16492958314); File='swing2.ogg' },
     @{ Name='crystal duel timer 10'; Ids=@(17826470563); File='timer10_crystal.ogg' },
@@ -40,9 +40,9 @@ $newRules = @(
 )
 
 $replacementFiles = [ordered]@{
-    'magic kill 1' = 'chant1_short.ogg'
-    'magic kill 2' = 'chant2_short.ogg'
-    'magic kill 3' = 'chant3_short.ogg'
+    'magic kill 1' = 'kill1_wisplive1.ogg'
+    'magic kill 2' = 'kill2_wisplive2.ogg'
+    'magic kill 3' = 'kill3_wisplive3.ogg'
     'crystal portal ambience' = 'evilportal_loop.ogg'
     'crystal katana attack 1' = 'wand1_short.ogg'
     'crystal katana attack 2' = 'wand2_short.ogg'

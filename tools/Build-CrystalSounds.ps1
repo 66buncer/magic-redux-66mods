@@ -1,6 +1,7 @@
 param(
     [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot),
-    [string]$ExtractRoot = 'C:\Users\b\Desktop\chat\thaumcraft_sound_extract\selected'
+    [string]$ExtractRoot = 'C:\Users\b\Desktop\chat\thaumcraft_sound_extract\selected',
+    [string]$AllSortedRoot = 'C:\Users\b\Desktop\chat\thaumcraft_sound_extract\all_sorted'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -12,6 +13,15 @@ function Get-SourcePath {
     $path = Join-Path $ExtractRoot $RelativePath
     if (-not (Test-Path -LiteralPath $path)) {
         throw "Missing source sound: $path"
+    }
+    return $path
+}
+
+function Get-AllSortedPath {
+    param([string]$RelativePath)
+    $path = Join-Path $AllSortedRoot $RelativePath
+    if (-not (Test-Path -LiteralPath $path)) {
+        throw "Missing all-sorted source sound: $path"
     }
     return $path
 }
@@ -54,6 +64,17 @@ foreach ($entry in $directFiles.GetEnumerator()) {
         -Destination (Join-Path $outputDirectory $entry.Key) -Force
 }
 
+
+$allSortedDirectFiles = [ordered]@{
+    'warhorn_egidle1.ogg' = '07_creature_eldritch_guardian\egidle1.ogg'
+    'kill1_wisplive1.ogg' = '11_creature_wisp\wisplive1.ogg'
+    'kill2_wisplive2.ogg' = '11_creature_wisp\wisplive2.ogg'
+    'kill3_wisplive3.ogg' = '11_creature_wisp\wisplive3.ogg'
+}
+foreach ($entry in $allSortedDirectFiles.GetEnumerator()) {
+    Copy-Item -LiteralPath (Get-AllSortedPath $entry.Value) `
+        -Destination (Join-Path $outputDirectory $entry.Key) -Force
+}
 $medkitAmplified = [ordered]@{
     'medkit_jar1_x2_5.ogg'    = 'jar1.ogg'
     'medkit_page1_x2_5.ogg'   = 'page1.ogg'
@@ -68,15 +89,7 @@ foreach ($entry in $medkitAmplified.GetEnumerator()) {
     )
 }
 
-$infuserStart = Get-SourcePath '04_ambience_portals\infuserstart.ogg'
 $shieldEffect = Get-SourcePath '01_crystal_core\runicShieldEffect.ogg'
-Invoke-AudioBuild -OutputName 'warhorn_crystal.ogg' -Arguments @(
-    '-i', $infuserStart,
-    '-i', $shieldEffect,
-    '-filter_complex',
-    '[0:a]volume=0.72[a0];[1:a]adelay=850|850,volume=0.88[a1];[a0][a1]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.95,volume=0.8[out]',
-    '-map', '[out]'
-)
 
 $ice1 = Get-SourcePath '01_crystal_core\ice1.ogg'
 $ice2 = Get-SourcePath '01_crystal_core\ice2.ogg'
@@ -126,14 +139,6 @@ Invoke-AudioBuild -OutputName 'lose_game_crystal.ogg' -Arguments @(
     '[0:a]volume=0.78[a0];[1:a]adelay=700|700,volume=0.72[a1];[a0][a1]amix=inputs=2:duration=longest:normalize=0,afade=t=out:st=2.45:d=0.45,alimiter=limit=0.94,volume=0.8[out]',
     '-map', '[out]'
 )
-
-foreach ($index in 1..3) {
-    $chant = Get-SourcePath "07_dark_magic_ambience\chant$index.ogg"
-    Invoke-AudioBuild -OutputName "chant${index}_short.ogg" -Arguments @(
-        '-i', $chant,
-        '-af', 'atrim=0:1.35,asetpts=PTS-STARTPTS,afade=t=out:st=1.0:d=0.35,alimiter=limit=0.94,volume=0.82'
-    )
-}
 
 foreach ($index in 1..2) {
     $wand = Get-SourcePath "03_combat_magic\wand$index.ogg"
