@@ -1,66 +1,6 @@
 {
     "replacement_rules":  [
                               {
-                                  "name":  "a24d270d-33df-49b2-9d15-8a844d4fb123",
-                                  "replace_ids":  [
-                                                      112156073461846
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/7d865043-51b8-4f99-b844-64483ad9d30a.png"
-                              },
-                              {
-                                  "name":  "e84088fc-5ab6-4c68-bf52-b3f6e1cf7609",
-                                  "replace_ids":  [
-                                                      80370960369204
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/360b96f4-ae33-4d2b-8b0c-a82ddf138a82.png"
-                              },
-                              {
-                                  "name":  "6fe66462-2e91-4071-98f8-b62fb3848d91",
-                                  "replace_ids":  [
-                                                      115486665139898
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/d494801e-9513-4358-ade7-e1d354019c91.png"
-                              },
-                              {
-                                  "name":  "9fe97d18-e171-45ad-b8a3-d33ecf8594e8",
-                                  "replace_ids":  [
-                                                      106699686969017
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/cb98ac8c-c41f-4cc3-a514-7c2af17b4b93.png"
-                              },
-                              {
-                                  "name":  "2b2478de-5cca-4af1-a6d0-4656d8d1c566",
-                                  "replace_ids":  [
-                                                      114213660098262,
-                                                      97418037278150
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/838ef0a4-591f-4568-ae56-b856a577b6ce.png"
-                              },
-                              {
-                                  "name":  "c46483f3-8669-4539-9713-f6ac72da11ee",
-                                  "replace_ids":  [
-                                                      82401696410253,
-                                                      138026337392894,
-                                                      128090144224329,
-                                                      138258679628751,
-                                                      126329289814158,
-                                                      89745235079273
-                                                  ],
-                                  "enabled":  true,
-                                  "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/f9c1bca0-e744-47bb-bb7a-2b8eb859aff3.png"
-                              },
-                              {
                                   "name":  "magic font cinzel light",
                                   "replace_ids":  [
                                                       12187342816
@@ -1170,6 +1110,66 @@
                                   "enabled":  true,
                                   "mode":  "cdn",
                                   "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/map_ambience_crystal.ogg"
+                              },
+                              {
+                                  "name":  "a24d270d-33df-49b2-9d15-8a844d4fb123",
+                                  "replace_ids":  [
+                                                      112156073461846
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/7d865043-51b8-4f99-b844-64483ad9d30a.png"
+                              },
+                              {
+                                  "name":  "e84088fc-5ab6-4c68-bf52-b3f6e1cf7609",
+                                  "replace_ids":  [
+                                                      80370960369204
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/360b96f4-ae33-4d2b-8b0c-a82ddf138a82.png"
+                              },
+                              {
+                                  "name":  "6fe66462-2e91-4071-98f8-b62fb3848d91",
+                                  "replace_ids":  [
+                                                      115486665139898
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/d494801e-9513-4358-ade7-e1d354019c91.png"
+                              },
+                              {
+                                  "name":  "9fe97d18-e171-45ad-b8a3-d33ecf8594e8",
+                                  "replace_ids":  [
+                                                      106699686969017
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/cb98ac8c-c41f-4cc3-a514-7c2af17b4b93.png"
+                              },
+                              {
+                                  "name":  "2b2478de-5cca-4af1-a6d0-4656d8d1c566",
+                                  "replace_ids":  [
+                                                      114213660098262,
+                                                      97418037278150
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/838ef0a4-591f-4568-ae56-b856a577b6ce.png"
+                              },
+                              {
+                                  "name":  "c46483f3-8669-4539-9713-f6ac72da11ee",
+                                  "replace_ids":  [
+                                                      82401696410253,
+                                                      138026337392894,
+                                                      128090144224329,
+                                                      138258679628751,
+                                                      126329289814158,
+                                                      89745235079273
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/Rivals-Pack-Assets/main/watermark_v1/f9c1bca0-e744-47bb-bb7a-2b8eb859aff3.png"
                               }
                           ]
 }
