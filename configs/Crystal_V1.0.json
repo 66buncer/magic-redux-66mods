@@ -196,7 +196,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant1.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant1_short.ogg"
                               },
                               {
                                   "name":  "magic kill 2",
@@ -205,7 +205,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant2.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant2_short.ogg"
                               },
                               {
                                   "name":  "magic kill 3",
@@ -214,7 +214,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant3.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/chant3_short.ogg"
                               },
                               {
                                   "name":  "crystal body hit",
@@ -340,7 +340,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/evilportal.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/evilportal_loop.ogg"
                               },
                               {
                                   "name":  "crystal oob warning",
@@ -367,7 +367,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand1.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand1_short.ogg"
                               },
                               {
                                   "name":  "crystal katana attack 2",
@@ -376,7 +376,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand2.ogg"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand2_short.ogg"
                               },
                               {
                                   "name":  "magic ui back",
@@ -734,6 +734,294 @@
                                   "enabled":  true,
                                   "mode":  "cdn",
                                   "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/dn_v2.png"
+                              },
+                              {
+                                  "name":  "crystal warhorn",
+                                  "replace_ids":  [
+                                                      73325703605178,
+                                                      94406584083681
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/warhorn_crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal map select",
+                                  "replace_ids":  [
+                                                      103035811146294
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/key.ogg"
+                              },
+                              {
+                                  "name":  "crystal double jump",
+                                  "replace_ids":  [
+                                                      16770456156,
+                                                      16492958314
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/swing2.ogg"
+                              },
+                              {
+                                  "name":  "crystal duel timer 10",
+                                  "replace_ids":  [
+                                                      17826470563
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/timer10_crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal win theme",
+                                  "replace_ids":  [
+                                                      18221725850,
+                                                      18239670056,
+                                                      18221726246
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/win_theme_crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal self snitch",
+                                  "replace_ids":  [
+                                                      99115398611290
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/learn.ogg"
+                              },
+                              {
+                                  "name":  "crystal ding",
+                                  "replace_ids":  [
+                                                      8483887957
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/jar3.ogg"
+                              },
+                              {
+                                  "name":  "crystal lobby music",
+                                  "replace_ids":  [
+                                                      17697682466,
+                                                      120824068504773
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/lobby_crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal matchmaking",
+                                  "replace_ids":  [
+                                                      18525513345
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/scan.ogg"
+                              },
+                              {
+                                  "name":  "crystal reward",
+                                  "replace_ids":  [
+                                                      17769583566
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/coins.ogg"
+                              },
+                              {
+                                  "name":  "crystal equipment whoosh",
+                                  "replace_ids":  [
+                                                      106551800007995
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/swing1.ogg"
+                              },
+                              {
+                                  "name":  "crystal lobby muffled",
+                                  "replace_ids":  [
+                                                      17733314783,
+                                                      114306049661290
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/lobby_crystal_muffled.ogg"
+                              },
+                              {
+                                  "name":  "crystal duel timer 4",
+                                  "replace_ids":  [
+                                                      17826390328
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/timer4_crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal intro",
+                                  "replace_ids":  [
+                                                      6384899588
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/intro_crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal round lose",
+                                  "replace_ids":  [
+                                                      16810321565
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wispdead.ogg"
+                              },
+                              {
+                                  "name":  "crystal game lose",
+                                  "replace_ids":  [
+                                                      18239670367
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/lose_game_crystal.ogg"
+                              },
+                              {
+                                  "name":  "crystal jumppad bounce",
+                                  "replace_ids":  [
+                                                      17835965985
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/poof2.ogg"
+                              },
+                              {
+                                  "name":  "crystal jumppad place",
+                                  "replace_ids":  [
+                                                      85163949920258
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/tool1.ogg"
+                              },
+                              {
+                                  "name":  "crystal molotov idle",
+                                  "replace_ids":  [
+                                                      14812965418
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/fireloop.ogg"
+                              },
+                              {
+                                  "name":  "crystal portal exit",
+                                  "replace_ids":  [
+                                                      81610952487049
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/poof1.ogg"
+                              },
+                              {
+                                  "name":  "crystal crossbow shoot",
+                                  "replace_ids":  [
+                                                      82715240396507
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/wand3.ogg"
+                              },
+                              {
+                                  "name":  "crystal crossbow pull",
+                                  "replace_ids":  [
+                                                      112269321366473,
+                                                      13682532502
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/craftstart.ogg"
+                              },
+                              {
+                                  "name":  "crystal crossbow latch",
+                                  "replace_ids":  [
+                                                      76155503538875
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/hhon.ogg"
+                              },
+                              {
+                                  "name":  "crystal fists attack",
+                                  "replace_ids":  [
+                                                      13160401062
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/crabclaw.ogg"
+                              },
+                              {
+                                  "name":  "crystal medkit quick stick",
+                                  "replace_ids":  [
+                                                      17123622923
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/jar1.ogg"
+                              },
+                              {
+                                  "name":  "crystal medkit bandage rip",
+                                  "replace_ids":  [
+                                                      13505411414
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/page1.ogg"
+                              },
+                              {
+                                  "name":  "crystal medkit heal",
+                                  "replace_ids":  [
+                                                      17138490999
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/learn.ogg"
+                              },
+                              {
+                                  "name":  "crystal medkit reload pop",
+                                  "replace_ids":  [
+                                                      13236026280
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/bubble1.ogg"
+                              },
+                              {
+                                  "name":  "crystal medkit equip catch",
+                                  "replace_ids":  [
+                                                      13160326139
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/tool1.ogg"
+                              },
+                              {
+                                  "name":  "crystal medkit apply",
+                                  "replace_ids":  [
+                                                      13505411336
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/spill.ogg"
+                              },
+                              {
+                                  "name":  "crystal map ambience",
+                                  "replace_ids":  [
+                                                      17813065011,
+                                                      17813065464,
+                                                      12099785239
+                                                  ],
+                                  "enabled":  true,
+                                  "mode":  "cdn",
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/sounds/map_ambience_crystal.ogg"
                               }
                           ]
 }
