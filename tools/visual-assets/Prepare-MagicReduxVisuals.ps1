@@ -273,4 +273,140 @@ Write-Composite 'headshot' $red {
     } finally { $pen.Dispose() }
 }
 
-Write-Output "PREPARED direct=12 composite=14"
+$itemRoot = Join-Path $preparedRoot 'item_backgrounds'
+$arenaRoot = Join-Path $preparedRoot 'arena_background'
+$overlayRoot = Join-Path $preparedRoot 'map_overlay_parts'
+[IO.Directory]::CreateDirectory($itemRoot) | Out-Null
+[IO.Directory]::CreateDirectory($arenaRoot) | Out-Null
+[IO.Directory]::CreateDirectory($overlayRoot) | Out-Null
+
+function Write-ItemBackground(
+    [string]$Name,
+    [Drawing.Color]$Accent,
+    [Drawing.Color]$Core
+) {
+    $bitmap = New-TransparentCanvas 256 256
+    $graphics = New-Graphics $bitmap
+    try {
+        $points = [Drawing.PointF[]]@(
+            [Drawing.PointF]::new(128, 18),
+            [Drawing.PointF]::new(225, 74),
+            [Drawing.PointF]::new(225, 182),
+            [Drawing.PointF]::new(128, 238),
+            [Drawing.PointF]::new(31, 182),
+            [Drawing.PointF]::new(31, 74)
+        )
+        $fill = [Drawing.SolidBrush]::new([Drawing.Color]::FromArgb(214, $Core))
+        $outer = New-Pen ([Drawing.Color]::FromArgb(220, $Accent)) 8
+        $inner = New-Pen ([Drawing.Color]::FromArgb(145, 245, 255, 255)) 2
+        try {
+            $graphics.FillPolygon($fill, $points)
+            $graphics.DrawPolygon($outer, $points)
+            $graphics.DrawPolygon($inner, [Drawing.PointF[]]@(
+                [Drawing.PointF]::new(128, 34),
+                [Drawing.PointF]::new(211, 82),
+                [Drawing.PointF]::new(211, 174),
+                [Drawing.PointF]::new(128, 222),
+                [Drawing.PointF]::new(45, 174),
+                [Drawing.PointF]::new(45, 82)
+            ))
+        }
+        finally {
+            $fill.Dispose()
+            $outer.Dispose()
+            $inner.Dispose()
+        }
+        Draw-SourceCentered $graphics (Get-SourcePath 'aspects/_back.png') ([Drawing.RectangleF]::new(42, 42, 172, 172))
+        Draw-SourceCentered $graphics (Get-SourcePath 'gui/hex1.png') ([Drawing.RectangleF]::new(76, 76, 104, 104))
+        Draw-SourceCentered $graphics (Get-SourcePath 'gui/hex2.png') ([Drawing.RectangleF]::new(97, 97, 62, 62))
+        Save-Png $bitmap (Join-Path $itemRoot "$Name.png")
+    }
+    finally {
+        $graphics.Dispose()
+        $bitmap.Dispose()
+    }
+}
+
+Write-ItemBackground 'itembg1' ([Drawing.Color]::FromArgb(255, 136, 147, 158)) ([Drawing.Color]::FromArgb(255, 22, 27, 31))
+Write-ItemBackground 'itembg2' ([Drawing.Color]::FromArgb(255, 49, 205, 232)) ([Drawing.Color]::FromArgb(255, 10, 34, 43))
+Write-ItemBackground 'itembg3' ([Drawing.Color]::FromArgb(255, 241, 200, 75)) ([Drawing.Color]::FromArgb(255, 48, 37, 11))
+Write-ItemBackground 'itembg4' ([Drawing.Color]::FromArgb(255, 154, 98, 232)) ([Drawing.Color]::FromArgb(255, 31, 15, 48))
+Write-ItemBackground 'itembg5' ([Drawing.Color]::FromArgb(255, 69, 241, 208)) ([Drawing.Color]::FromArgb(255, 7, 24, 28))
+
+$arena = [Drawing.Bitmap]::new(1536, 1024, [Drawing.Imaging.PixelFormat]::Format32bppArgb)
+$arenaGraphics = New-Graphics $arena
+try {
+    $arenaGraphics.Clear([Drawing.Color]::FromArgb(255, 4, 10, 14))
+    for ($radius = 900; $radius -ge 180; $radius -= 60) {
+        $ratio = ($radius - 180) / 720
+        $alpha = [int](12 + (1 - $ratio) * 24)
+        $brush = [Drawing.SolidBrush]::new([Drawing.Color]::FromArgb($alpha, 20, 205, 210))
+        try {
+            $arenaGraphics.FillEllipse($brush, 768 - $radius, 512 - $radius * 0.62, $radius * 2, $radius * 1.24)
+        }
+        finally {
+            $brush.Dispose()
+        }
+    }
+    Draw-SourceCentered $arenaGraphics (Get-SourcePath 'misc/vortex.png') ([Drawing.RectangleF]::new(398, 142, 740, 740))
+    Draw-SourceCentered $arenaGraphics (Get-SourcePath 'research/eldritchajor1.png') ([Drawing.RectangleF]::new(70, 230, 430, 560)) -12
+    Draw-SourceCentered $arenaGraphics (Get-SourcePath 'research/eldritchajor1.png') ([Drawing.RectangleF]::new(1036, 230, 430, 560)) 12
+    $horizon = New-Pen ([Drawing.Color]::FromArgb(120, 69, 241, 208)) 3
+    try {
+        $arenaGraphics.DrawLine($horizon, 96, 808, 1440, 808)
+        $arenaGraphics.DrawLine($horizon, 250, 836, 1286, 836)
+    }
+    finally {
+        $horizon.Dispose()
+    }
+    Save-Png $arena (Join-Path $arenaRoot 'arena.png')
+}
+finally {
+    $arenaGraphics.Dispose()
+    $arena.Dispose()
+}
+
+$frame = New-TransparentCanvas 1536 1024
+$frameGraphics = New-Graphics $frame
+try {
+    $framePen = New-Pen ([Drawing.Color]::FromArgb(205, 69, 241, 208)) 8
+    $shinePen = New-Pen ([Drawing.Color]::FromArgb(130, 235, 255, 255)) 2
+    try {
+        $frameGraphics.DrawRectangle($framePen, 30, 30, 1476, 964)
+        $frameGraphics.DrawRectangle($shinePen, 46, 46, 1444, 932)
+        foreach ($corner in @(
+            [Drawing.PointF[]]@([Drawing.PointF]::new(30, 180), [Drawing.PointF]::new(30, 30), [Drawing.PointF]::new(180, 30)),
+            [Drawing.PointF[]]@([Drawing.PointF]::new(1356, 30), [Drawing.PointF]::new(1506, 30), [Drawing.PointF]::new(1506, 180)),
+            [Drawing.PointF[]]@([Drawing.PointF]::new(30, 844), [Drawing.PointF]::new(30, 994), [Drawing.PointF]::new(180, 994)),
+            [Drawing.PointF[]]@([Drawing.PointF]::new(1356, 994), [Drawing.PointF]::new(1506, 994), [Drawing.PointF]::new(1506, 844))
+        )) {
+            $frameGraphics.DrawLines($framePen, $corner)
+        }
+    }
+    finally {
+        $framePen.Dispose()
+        $shinePen.Dispose()
+    }
+    Save-Png $frame (Join-Path $overlayRoot 'map_frame.png')
+}
+finally {
+    $frameGraphics.Dispose()
+    $frame.Dispose()
+}
+
+$particles = New-TransparentCanvas 1536 1024
+$particleGraphics = New-Graphics $particles
+try {
+    Draw-SourceCentered $particleGraphics (Get-SourcePath 'misc/particlefield.png') ([Drawing.RectangleF]::new(20, 20, 460, 460))
+    Draw-SourceCentered $particleGraphics (Get-SourcePath 'misc/particlefield.png') ([Drawing.RectangleF]::new(1056, 544, 460, 460)) 180
+    Draw-SourceCentered $particleGraphics (Get-SourcePath 'misc/wispy.png') ([Drawing.RectangleF]::new(420, 22, 696, 180))
+    Draw-SourceCentered $particleGraphics (Get-SourcePath 'misc/wispy.png') ([Drawing.RectangleF]::new(420, 822, 696, 180)) 180
+    Save-Png $particles (Join-Path $overlayRoot 'map_particles.png')
+}
+finally {
+    $particleGraphics.Dispose()
+    $particles.Dispose()
+}
+
+Write-Output "PREPARED-BACKGROUNDS item_backgrounds=5 arena=1 overlays=2"
+

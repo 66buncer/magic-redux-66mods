@@ -117,6 +117,77 @@ if ($Phase -eq 'Prepared') {
             }
         }
     }
+    $itemRoot = Join-Path $preparedRoot 'item_backgrounds'
+    $itemHashes = @()
+    for ($index = 1; $index -le 5; $index++) {
+        $itemPath = Join-Path $itemRoot "itembg$index.png"
+        if (-not (Test-Path -LiteralPath $itemPath)) {
+            throw "Item background is missing: itembg$index.png"
+        }
+        $item = [Drawing.Bitmap]::FromFile($itemPath)
+        try {
+            if ($item.Width -ne 256 -or $item.Height -ne 256) {
+                throw "Item background has wrong dimensions: itembg$index.png"
+            }
+        }
+        finally {
+            $item.Dispose()
+        }
+        $itemHashes += (Get-FileHash -Algorithm SHA256 -LiteralPath $itemPath).Hash
+    }
+    if (@($itemHashes | Sort-Object -Unique).Count -ne 5) {
+        throw "Item backgrounds are not visually distinct"
+    }
+
+    $arenaPath = Join-Path $preparedRoot 'arena_background\arena.png'
+    if (-not (Test-Path -LiteralPath $arenaPath)) {
+        throw "Arena background is missing"
+    }
+    $arena = [Drawing.Bitmap]::FromFile($arenaPath)
+    try {
+        if ($arena.Width -ne 1536 -or $arena.Height -ne 1024) {
+            throw "Arena background has wrong dimensions"
+        }
+        for ($y = 0; $y -lt $arena.Height; $y += 8) {
+            for ($x = 0; $x -lt $arena.Width; $x += 8) {
+                if ($arena.GetPixel($x, $y).A -ne 255) {
+                    throw "Arena background contains alpha holes"
+                }
+            }
+        }
+    }
+    finally {
+        $arena.Dispose()
+    }
+
+    foreach ($overlayName in @('map_frame', 'map_particles')) {
+        $overlayPath = Join-Path $preparedRoot "map_overlay_parts\$overlayName.png"
+        if (-not (Test-Path -LiteralPath $overlayPath)) {
+            throw "Map overlay is missing: $overlayName.png"
+        }
+        $overlay = [Drawing.Bitmap]::FromFile($overlayPath)
+        try {
+            if ($overlay.Width -ne 1536 -or $overlay.Height -ne 1024) {
+                throw "Map overlay has wrong dimensions: $overlayName.png"
+            }
+            $visible = $false
+            $transparent = $false
+            for ($y = 0; $y -lt $overlay.Height; $y += 8) {
+                for ($x = 0; $x -lt $overlay.Width; $x += 8) {
+                    $alpha = $overlay.GetPixel($x, $y).A
+                    if ($alpha -gt 0) { $visible = $true }
+                    if ($alpha -eq 0) { $transparent = $true }
+                }
+            }
+            if (-not $visible -or -not $transparent) {
+                throw "Map overlay must contain visible and transparent pixels: $overlayName.png"
+            }
+        }
+        finally {
+            $overlay.Dispose()
+        }
+    }
+
 }
 
 Write-Output "PASS phase=$Phase ranks=18 selected=$(@($selection.entries).Count)"
