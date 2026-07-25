@@ -678,7 +678,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/ft.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/ft_v2.png"
                               },
                               {
                                   "name":  "crystal skybox bk",
@@ -689,7 +689,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/bk.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/bk_v2.png"
                               },
                               {
                                   "name":  "crystal skybox lf",
@@ -700,7 +700,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/lf.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/lf_v2.png"
                               },
                               {
                                   "name":  "crystal skybox rt",
@@ -711,7 +711,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/rt.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/rt_v2.png"
                               },
                               {
                                   "name":  "crystal skybox up",
@@ -722,7 +722,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/up.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/up_v2.png"
                               },
                               {
                                   "name":  "crystal skybox dn",
@@ -733,7 +733,7 @@
                                                   ],
                                   "enabled":  true,
                                   "mode":  "cdn",
-                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/dn.png"
+                                  "cdn_url":  "https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/dn_v2.png"
                               }
                           ]
 }
