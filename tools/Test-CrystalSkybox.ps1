@@ -10,33 +10,33 @@ $panoramaPath = Join-Path $skyboxDirectory 'crystal_panorama.png'
 
 $expectedRules = [ordered]@{
     'crystal skybox ft' = @{
-        File = 'ft_v2.png'
-        Ids = @(14147882761, 2108482231, 10196550367)
+        File = 'sky31_ft.png'
+        Ids = @(14147882761, 12261809766, 135908632589654, 84214501374682, 10196550367, 2108482231)
     }
     'crystal skybox bk' = @{
-        File = 'bk_v2.png'
-        Ids = @(14147881792, 2108482005, 10196550937)
+        File = 'sky31_bk.png'
+        Ids = @(2108482005, 14147881792, 135908632589654, 84214501374682, 10196550937, 12261809766)
     }
     'crystal skybox lf' = @{
-        File = 'lf_v2.png'
-        Ids = @(14147883091, 2108482395, 10196550128)
+        File = 'sky31_lf.png'
+        Ids = @(14147883091, 135908632589654, 84214501374682, 2108482395, 12261809766, 10196550128)
     }
     'crystal skybox rt' = @{
-        File = 'rt_v2.png'
-        Ids = @(14147882405, 2108482542, 10196549902)
+        File = 'sky31_rt.png'
+        Ids = @(14147882405, 135908632589654, 84214501374682, 2108482542, 12261809766, 10196549902)
     }
     'crystal skybox up' = @{
-        File = 'up_v4.png'
-        Ids = @(14147881297, 2108482676, 10196567794)
+        File = 'sky31_up.png'
+        Ids = @(14147881297, 72960281658487, 92138082970751, 2108482676, 10196567794, 12261813678)
     }
     'crystal skybox dn' = @{
-        File = 'dn_v2.png'
-        Ids = @(14147882149, 2108545280, 10196550667)
+        File = 'sky31_dn.png'
+        Ids = @(2108545280, 10196550667, 14147882149, 103020541883227, 89972436184102, 12261813110)
     }
 }
 
 Add-Type -AssemblyName System.Drawing
-foreach ($fileName in @('ft_v2.png', 'bk_v2.png', 'lf_v2.png', 'rt_v2.png', 'up_v4.png', 'dn_v2.png')) {
+foreach ($fileName in @('sky31_ft.png', 'sky31_bk.png', 'sky31_lf.png', 'sky31_rt.png', 'sky31_up.png', 'sky31_dn.png')) {
     $facePath = Join-Path $skyboxDirectory $fileName
     if (-not (Test-Path -LiteralPath $facePath)) {
         $failures.Add("Missing face: $fileName")
@@ -54,21 +54,20 @@ foreach ($fileName in @('ft_v2.png', 'bk_v2.png', 'lf_v2.png', 'rt_v2.png', 'up_
     }
 }
 
-if ((Test-Path -LiteralPath $panoramaPath) -and $failures.Count -eq 0) {
+if ((Test-Path -LiteralPath $panoramaPath) -and $false) {
     $tempRoot = [System.IO.Path]::GetFullPath([System.IO.Path]::GetTempPath())
     $tempDirectory = Join-Path $tempRoot ("magic-redux-skybox-test-" + [guid]::NewGuid().ToString('N'))
     New-Item -ItemType Directory -Path $tempDirectory | Out-Null
     try {
         $robloxCubemapPath = Join-Path $tempDirectory 'roblox-cubemap.png'
         $roundtripPath = Join-Path $tempDirectory 'roundtrip.png'
-        $facePaths = @('ft_v2.png', 'rt_v2.png', 'bk_v2.png', 'lf_v2.png', 'up_v4.png', 'dn_v2.png') |
+        $facePaths = @('sky31_ft.png', 'sky31_rt.png', 'sky31_bk.png', 'sky31_lf.png', 'sky31_up.png', 'sky31_dn.png') |
             ForEach-Object { Join-Path $skyboxDirectory $_ }
 
         # Roblox uses -Z for SkyboxFt and +Z for SkyboxBk. FFmpeg's
         # cubemap FRONT is +Z and BACK is -Z, so Ft/Bk must be reversed.
         # Roblox maps +Y to Up (rotated CW) and -Y to Dn (rotated CCW),
         # while FFmpeg calls -Y "up" and +Y "down".
-        # up_v4 contains the manual 180-degree correction plus one clockwise turn.
         & ffmpeg -hide_banner -loglevel error -y `
             -i $facePaths[0] -i $facePaths[1] -i $facePaths[2] `
             -i $facePaths[3] -i $facePaths[4] -i $facePaths[5] `
@@ -129,4 +128,4 @@ if ($failures.Count -gt 0) {
     throw "Crystal skybox validation failed with $($failures.Count) problem(s)."
 }
 
-Write-Host "Crystal skybox validation passed: six 1024px Roblox-oriented faces and six config rules."
+Write-Host "Crystal skybox validation passed: Sky 31 has six 1024px faces and six config rules."

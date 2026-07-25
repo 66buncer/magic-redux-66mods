@@ -32,40 +32,17 @@ foreach ($item in $expectedSounds) {
 }
 
 $upRule = @($config.replacement_rules | Where-Object { $_.name -eq 'crystal skybox up' })
-$expectedUpUrl = 'https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/up_v4.png'
+$expectedUpUrl = 'https://raw.githubusercontent.com/66buncer/magic-redux-66mods/main/visuals/skybox/crystal/sky31_up.png'
 if ($upRule.Count -ne 1 -or $upRule[0].cdn_url -ne $expectedUpUrl) {
-    throw 'Skybox Up rule does not point to up_v4.png'
+    throw 'Skybox Up rule does not point to sky31_up.png'
 }
 
-$upV3 = Join-Path $skyboxDirectory 'up_v3.png'
-$upV4 = Join-Path $skyboxDirectory 'up_v4.png'
-if (-not (Test-Path -LiteralPath $upV4)) {
-    throw 'Corrected Skybox Up file is missing'
+$upPath = Join-Path $skyboxDirectory 'sky31_up.png'
+if (-not (Test-Path -LiteralPath $upPath)) {
+    throw 'Sky 31 Up file is missing'
+}
+if ((Get-FileHash -Algorithm SHA256 -LiteralPath $upPath).Hash -ne 'DD9AF8BD494E8E77C62C01A5B931D78E7A97B1315D9F7C9E4DAB7BCFA14E0CDF') {
+    throw 'sky31_up.png hash does not match the catalog asset'
 }
 
-$tempRoot = [IO.Path]::GetFullPath([IO.Path]::GetTempPath())
-$tempDirectory = Join-Path $tempRoot ("crystal-up-test-" + [guid]::NewGuid().ToString('N'))
-New-Item -ItemType Directory -Path $tempDirectory | Out-Null
-try {
-    $expectedUp = Join-Path $tempDirectory 'expected-up-v4.png'
-    & ffmpeg -hide_banner -loglevel error -y -i $upV3 -vf 'transpose=1' -frames:v 1 $expectedUp
-    if ($LASTEXITCODE -ne 0) {
-        throw 'Could not build expected clockwise Up correction'
-    }
-
-    $previousPreference = $ErrorActionPreference
-    $ErrorActionPreference = 'Continue'
-    $psnrOutput = (& ffmpeg -hide_banner -i $expectedUp -i $upV4 -lavfi psnr -f null NUL 2>&1) -join "`n"
-    $ErrorActionPreference = $previousPreference
-    if ($psnrOutput -notmatch 'average:inf') {
-        throw 'up_v4.png must be an exact 90-degree clockwise rotation of up_v3.png'
-    }
-}
-finally {
-    $resolvedTemp = [IO.Path]::GetFullPath($tempDirectory)
-    if ($resolvedTemp.StartsWith($tempRoot, [StringComparison]::OrdinalIgnoreCase)) {
-        Remove-Item -LiteralPath $resolvedTemp -Recurse -Force
-    }
-}
-
-Write-Host 'Wisp sounds and Skybox Up validation passed: four exact OGG files and one additional clockwise Up correction.'
+Write-Host 'Wisp sounds and Skybox Up validation passed: four exact OGG files and Sky 31 Up replacement.'
