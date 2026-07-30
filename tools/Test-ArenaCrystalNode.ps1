@@ -34,7 +34,7 @@ try {
             if ($pixel.R -gt 245 -and $pixel.G -gt 245 -and $pixel.B -gt 245) { $opaqueWhite++ }
         }
     }
-    if ($opaquePixels -lt 3500) {
+    if ($opaquePixels -lt 3700) {
         throw "Arena tile must stay mostly filled like a square plate; found only $opaquePixels opaque pixel(s)"
     }
     if ($opaqueBlack -ne 0) {
@@ -80,13 +80,13 @@ try {
         if ($transparentRows[0] -lt 24 -or $transparentRows[0] -gt 31) {
             throw 'Repeated arena seam must keep the old plus-width line through the crystal junction'
         }
-        if ($transparentRows[-6] -lt 8 -or $transparentRows[-6] -gt 16 -or $transparentRows[6] -lt 8 -or $transparentRows[6] -gt 16) {
+        if ($transparentRows[-6] -lt 4 -or $transparentRows[-6] -gt 10 -or $transparentRows[6] -lt 4 -or $transparentRows[6] -gt 10) {
             throw 'Repeated arena corner cutouts must make a compact crystal body around the old plus size'
         }
-        if ($transparentRows[-12] -gt 4 -or $transparentRows[12] -gt 4) {
+        if ($transparentRows[-12] -gt 2 -or $transparentRows[12] -gt 2) {
             throw 'Repeated arena corner cutouts are too tall for the old plus-size crystal node'
         }
-        if ($transparentOutsideDiamond -gt 18) {
+        if ($transparentOutsideDiamond -gt 10) {
             throw "Repeated arena corner cutouts spill outside the compact crystal silhouette: $transparentOutsideDiamond pixel(s)"
         }
     }
