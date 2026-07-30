@@ -6,6 +6,7 @@ $ErrorActionPreference = 'Stop'
 $rankDirectory = Join-Path $RepositoryRoot 'ranks'
 $configPath = Join-Path $RepositoryRoot 'configs\Crystal_V1.0.json'
 $maxSize = 128
+$maxOpaqueHeight = 32
 
 Add-Type -AssemblyName System.Drawing
 $failures = [System.Collections.Generic.List[string]]::new()
@@ -29,13 +30,30 @@ foreach ($rule in $rankRules) {
         continue
     }
 
-    $image = [Drawing.Image]::FromFile($rankPath)
+    $image = [Drawing.Bitmap]::FromFile($rankPath)
     try {
         if ($image.Width -gt $maxSize -or $image.Height -gt $maxSize) {
             $failures.Add("$fileName is too large: $($image.Width)x$($image.Height)")
         }
         if (-not [Drawing.Image]::IsAlphaPixelFormat($image.PixelFormat)) {
             $failures.Add("$fileName does not preserve alpha")
+        }
+
+        $minY = $image.Height
+        $maxY = -1
+        for ($y = 0; $y -lt $image.Height; $y++) {
+            for ($x = 0; $x -lt $image.Width; $x++) {
+                if ($image.GetPixel($x, $y).A -gt 10) {
+                    if ($y -lt $minY) { $minY = $y }
+                    if ($y -gt $maxY) { $maxY = $y }
+                }
+            }
+        }
+        if ($maxY -ge 0) {
+            $opaqueHeight = $maxY - $minY + 1
+            if ($opaqueHeight -gt $maxOpaqueHeight) {
+                $failures.Add("$fileName visible rank is too tall: $opaqueHeight px, expected <= $maxOpaqueHeight px")
+            }
         }
     }
     finally {
@@ -55,4 +73,4 @@ if ($failures.Count -gt 0) {
     throw "Rank dimension validation failed with $($failures.Count) problem(s)."
 }
 
-Write-Host "Rank dimension validation passed: 18 rank rules use 128px alpha PNGs."
+Write-Host "Rank dimension validation passed: 18 rank rules use compact 128px alpha PNGs."
